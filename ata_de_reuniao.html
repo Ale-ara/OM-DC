@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -381,7 +382,6 @@ h3 {
                        Ordem Militar
                         </div>
                         <div class="nav_list">
-
                             <div class="nav_item">
                                 <a href="./ata_de_reuniao.html" class="nav_link">
                                     <i class='bx bx-news nav_icon'></i>
@@ -415,13 +415,13 @@ h3 {
                 <div class="container">
                     <img class="logo" src="https://i.imgur.com/b5hnpge.png" alt="Habbo Logo">
                     <h1>ATA de Reunião</h1>
-                        <div class="item">
-<div class="section" id="description">
+                      <div class="item">
+                    <div class="section" id="description">
                         <p></p><span class="blue-text">O Departamento de Comunicação da Ordem Militar</span> informa. Nesta ata, você encontrará informações importantes sobre a reunião geral da Ordem Militar realizada no <span blue-text id="date">Período de abrangência: Aguardando dados...</span>. 
-                        Em tal evento, foram anunciados projetos importantes que entraram em vigor durante a última quinzena, bem como promoções e demais aviso importantes. Caso tenha faltado ou deseje relembrar algum assunto tratado, leia atentamente às informações aqui expostas.</p></span></span></div>
+                        Em tal evento, foram anunciados projetos importantes que entraram em vigor durante a última quinzena, bem como promoções e demais aviso importantes. Caso tenha faltado ou deseje relembrar algum assunto tratado, leia atentamente às informações aqui expostas.</p></span></div>
+                
+                  
                 </div>
-
-
                     <div class="section">
                         <h2>Assuntos diversos</h2>
                         <div class="item">
@@ -458,18 +458,15 @@ h3 {
                             <div class="promoted-item" id="est-to-min">
                                 <strong class="blue-text">Est > Min:</strong> <span id="EstToMin"></span>
                             </div>
-
-                            <div class="promoted-item" id="cap-to-est">
-                                <strong class="blue-text">Grad > Est:</strong> <span id="GradToEst"></span>
-                            </div>
+                    
                            
                             <div class="promoted-item" id="av-to-grad">
-                                <strong class="blue-text">Av > Grad:</strong> <span id="AvToGrad"></span>
+                                <strong class="blue-text">Grad > Est:</strong> <span id="AvToGrad"></span>
                             </div>
                     
                            
                             <div class="promoted-item" id="cons-to-av">
-                                <strong class="blue-text">Cons > Av:</strong> <span id="ConsToAv"></span>
+                                <strong class="blue-text">Av > Grad:</strong> <span id="ConsToAv"></span>
                             </div>
                     
                     
@@ -499,9 +496,9 @@ h3 {
 
     </div>
     <script>
-        
+        // Função para carregar os dados da planilha
         function loadData() {
-            fetch('https://script.google.com/macros/s/AKfycbx1U4V04ZEpIWMC6GcKD8Ds2MC3K3Rd-wN-5gf7_2LPEovVq1AvDb4ykizDV4FAL3cPJg/exec')
+            fetch('https://script.google.com/macros/s/AKfycbyUHnb57wC0PPsRo1ULt7-qYXWpTzIol8EvMUnqI5vMMjQo4ojGcgKM0LFOnIegonyj4w/exec')
                 .then(response => response.json())
                 .then(data => {
                     
@@ -610,7 +607,6 @@ h3 {
         window.onload = loadData;
         
     </script>
-
     
 </body>
 
