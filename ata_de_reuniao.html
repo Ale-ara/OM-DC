@@ -612,6 +612,22 @@ h3 {
         window.onload = loadData;
         
     </script>
+
+        <script>
+        // Função para formatar a data
+        function formatDate(dateString) {
+            const date = new Date(dateString);
+            const options = { year: 'numeric', month: 'long', day: 'numeric' };
+            return date.toLocaleDateString('pt-BR', options);
+        }
+
+        // Atualizar o texto da data
+        document.addEventListener('DOMContentLoaded', () => {
+            const dateElement = document.getElementById('date');
+            const dateString = '2024-01-12T03:00:00.000Z'; // Substitua com a data que você deseja formatar
+            dateElement.textContent = `Período de abrangência: ${formatDate(dateString)}`;
+        });
+    </script>
     
 </body>
 
